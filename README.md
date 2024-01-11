@@ -14,3 +14,10 @@ Features Implemented: -
          5th Attempts- 20  points
 
 ### ATM INTERFACE (TASK-2)
+Implemented 5 Classes in the form of nested
+##### Main class - AtmInterface
+##### Sub Classes - Deposit, Withdraw, Transfer, TransactionHistory & Quit
+Only After Valid Authentication, User Can Access ATM Services. For Sample Case I Considered User details as
+###### username:sai 
+###### passkey :123 
+I considered Only 1 customer details here. In real-time projects All the customer details are present in Big-Database Management System, which is not possible to implement here. 
