@@ -1,12 +1,11 @@
-//Number Guessing Game In Java
 import java.util.*;
 public class NumberGuessingGame
 {
 	public static void main(String[] args) {
-		System.out.println("Hello Dear...Welcome To The World's Famous Number Guessing Game");
-		System.out.println("Game Theory:-");
-		System.out.println("A Random Number From 1-100 Is Choosen By Me & You Need To Guess The Number");
-		System.out.println("Please Add Total Number Of Rounds You Want To Play");
+		System.out.println("         Hello Dear...Welcome To The World's Famous Number Guessing Game         ");
+		System.out.println("                                Game Rules:-                                     ");
+		System.out.println("         1)A Random Number From 1-100 Is Choosen By Me\n         2)You Need To Guess The Number    ");
+		System.out.println("         Please Add Total Number Of Rounds You Want To Play                  ");
 		try{
 		Scanner sc=new Scanner(System.in);
 		int roundsInGame=sc.nextInt();
@@ -16,10 +15,10 @@ public class NumberGuessingGame
 		    System.out.println("Round:"+(i+1));
 		    Random r=new Random();
 		    int rN=r.nextInt(101);
-		    System.out.println("I Have Choosen A Random Number...Its Your Turn");
+		    System.out.println("   I Have Choosen A Random Number...Its Your Turn");
 		    int userInput=sc.nextInt();
 		    int f_score=letsPlayTheGame(rN,userInput,numberOfAttemps);
-		    System.out.println("Your score:"+f_score);
+		    System.out.println("    Your score:"+f_score);
 		}
 		System.out.println("You Played Really Well...Thanks For Playing With Us...Have A Nice Day");
 		}
@@ -39,7 +38,7 @@ public class NumberGuessingGame
 		{
 		    if(userInput==rN)
 		    {
-		        System.out.println("Hurrah You Did It...You Did A Great Job"+"Your Score is");
+		        System.out.println("Hurrah You Did It...You Did A Great Job."+" Your Score is");
 		        return score;
 		    }
 		    else if(userInput<rN)
