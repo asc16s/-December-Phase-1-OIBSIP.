@@ -13,6 +13,19 @@ Features Implemented: -
          4th Attempt - 40  points
          5th Attempts- 20  points
 
+#### NumberGuessingGame
+     
+
+
+
+
+https://github.com/asc16s/-December-Phase-1-OIBSIP./assets/113190492/8d14881d-1246-42a5-a1a4-1edbef0422ae
+
+
+
+
+
+
 ### ATM INTERFACE (TASK-2)
 Implemented 5 Classes in the form of nested
 ##### Main class - AtmInterface
@@ -20,4 +33,11 @@ Implemented 5 Classes in the form of nested
 Only After Valid Authentication, User Can Access ATM Services. For Sample Case I Considered User details as
 ###### username:sai 
 ###### passkey :123 
-I considered Only 1 customer details here. In real-time projects All the customer details are present in Big-Database Management System, which is not possible to implement here. 
+I considered Only 1 customer details here. In real-time projects All the customer details are present in Big-Database Management System, which is not possible to implement here.
+
+#### ATM Interface
+
+
+
+https://github.com/asc16s/-December-Phase-1-OIBSIP./assets/113190492/c2ff8f5b-daf3-4b15-9b87-9284e92f424f
+
