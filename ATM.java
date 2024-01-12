@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-public class AtmInterface
+public class ATM
 {
     static String userName="sai"; // Considering A Sample Credentials... A List Of Credentials Are Present In Big DataBase Management System
     static String passKey="123"; // Considering A Sample Credentials... A List Of Credentials Are Present In Big DataBase Management System
@@ -60,7 +60,7 @@ public class AtmInterface
 	    int choice=sc.nextInt();
 	    switch(choice)
 	    {
-	        case 1: Main.Deposit d=new Main.Deposit();
+	        case 1: ATM.Deposit d=new ATM.Deposit();
 	                try{
 	                d.DepositIntoBank(); // invoking DepositIntoBank() Method 
 	                }
@@ -70,7 +70,7 @@ public class AtmInterface
 	                    C.printStackTrace();
 	                }
 	                break;
-	        case 2: Main.Withdraw w=new Main.Withdraw();
+	        case 2: ATM.Withdraw w=new ATM.Withdraw();
 	                try{
 	                w.WithdrawFromBank(); // invoking WithdrawFromBank() Method
 	                }
@@ -80,7 +80,7 @@ public class AtmInterface
 	                    c.printStackTrace();
 	                }
 	                break;
-	        case 3: Main.TransactionHistory T_H=new Main.TransactionHistory();
+	        case 3: ATM.TransactionHistory T_H=new ATM.TransactionHistory();
 	                try{
 	                T_H.TransactionHistoryFromAccount();// invoking TransactionHistoryFromAccount() Method
 	                }
@@ -90,7 +90,7 @@ public class AtmInterface
 	                    a.printStackTrace();
 	                }
 	                break;
-	        case 4: Main.Transfer t=new Main.Transfer();
+	        case 4: ATM.Transfer t=new ATM.Transfer();
 	                try{
 	                t.TransferToAccount(); //invoking TransferToAccount() Method
 	                }
@@ -100,7 +100,7 @@ public class AtmInterface
 	                    s.printStackTrace();
 	                }
 	                break;
-	        case 5: Main.Quit q=new Main.Quit();
+	        case 5: ATM.Quit q=new ATM.Quit();
 	                try{
 	                q.QuitFromAtm(); // invoking QuitFromAtm() method
 	                }
@@ -129,7 +129,7 @@ public class AtmInterface
 	        System.out.println("Amount Deposited Successfully...");
 	        System.out.println("Current Balance: "+balance); // Printing The Current Balance
 	        TimeUnit.SECONDS.sleep(1); // making method to sleep for 3 seconds 
-	        Main.HomePage();// Calling HomePage() method
+	        ATM.HomePage();// Calling HomePage() method
 	    }
 	}
 	static class Withdraw
@@ -152,7 +152,7 @@ public class AtmInterface
 	            System.out.println("Insufficient Balance");
 	        }
 	        TimeUnit.SECONDS.sleep(1); //making method to sleep for 3 sec
-	        Main.HomePage(); // calling HomePage() method
+	        ATM.HomePage(); // calling HomePage() method
 	    }
 	}
 	static class TransactionHistory
@@ -161,7 +161,7 @@ public class AtmInterface
 	    {
 	        System.out.println(TransactionHistory); // Printing TransactionHistory string
 	        TimeUnit.SECONDS.sleep(1);// making method to sleep for 3 seconds
-	        Main.HomePage(); // calling HomePage() method
+	        ATM.HomePage(); // calling HomePage() method
 	    }
 	    
 	}
@@ -185,7 +185,7 @@ public class AtmInterface
 	            System.out.println("Insufficient Balance...");
 	        }
 	        TimeUnit.SECONDS.sleep(1);// making method to sleep for 3 seconds
-	        Main.HomePage(); // calling HomePage() Mehtod
+	        ATM.HomePage(); // calling HomePage() Mehtod
 	    }
 	}
 	static class Quit
@@ -196,4 +196,5 @@ public class AtmInterface
 	    }
 	}
 }
+
 
